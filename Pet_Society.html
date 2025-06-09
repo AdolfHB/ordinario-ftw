@@ -31,25 +31,25 @@
             <div class="productos">
                 <div class="producto" role="group" aria-label="Whiskas">
                     <h3>Whiskas</h3>
-                    <img src="Imagenes/Whiskas.jpg" alt="Sobre de Whiskas de 85 gramos" height="250" width="200"/>
-                    <p>$37.00</p>
+                    <img src="Imagenes/Whiskas.jpg" alt="Sobre de comida para gatos, Whiskas de 85 gramos" height="250" width="200"/>
+                    <p id="precio" aria-roledescription="Precio del producto">$37.00</p>
                     <button onclick="" aria-label="Comprar Producto">Comprar</button>
                 </div>
                 <div class="producto" role="group" aria-label="pedigree">
                     <h3>Pedigree</h3>
-                    <img src="Imagenes/pedigree.webp" alt="Sobre de Pedigree de 100 gramos" height="250" width="200"/>
+                    <img src="Imagenes/pedigree.webp" alt="Sobre de comida para perros, Pedigree de 100 gramos" height="250" width="200"/>
                     <p>$42.00</p>
                     <button onclick="" aria-label="Comprar Producto">Comprar</button>
                 </div>
                 <div class="producto" role="group" aria-label="catchow">
                     <h3>Cat Chow</h3>
-                    <img src="Imagenes/Cat chow.webp" alt="Sobre de Cat chow de 85 gramos" height="250" width="200"/>
+                    <img src="Imagenes/Cat chow.webp" alt="Sobre de comida para gatos, Cat chow de 85 gramos" height="250" width="200"/>
                     <p>$40.00</p>
                     <button onclick="" aria-label="Comprar Producto">Comprar</button>
                 </div>
                 <div class="producto" role="group" aria-label="Ganador">
                     <h3>Ganador</h3>
-                    <img src="Imagenes/ganador.webp" alt="Costal de Ganador de 15 kilos" height="250" width="200"/>
+                    <img src="Imagenes/ganador.webp" alt="Costal de comida para perros, Ganador de 15 kilos" height="250" width="200"/>
                     <p>$440.00</p>
                     <button onclick="" aria-label="Comprar Producto">Comprar</button>
                 </div>
@@ -87,12 +87,12 @@
             <p>Puedes enviarnos un mensaje rellenando el siguiente formulario</p>
             <form aria-label="Formulario de contacto">
                 <label>Nombre:</label><br />
-                <input type="text" id="Campo de nombre" name="nombre" required><br />
+                <input id="Campo de nombre" name="Campo de nombre" type="text" name="nombre" aria-required="true" aria-roledescription="Campo para ingresar el nombre del emisor"><br />
                 <label>Correo:</label><br />
-                <input type="email" id="Campo de correo" name="correo" required><br />
+                <input id="Campo de correo"  name="Campo de correo" type="email" name="correo" aria-required="true" aria-roledescription="Campo para ingresar el correo del emisor"><br />
                 <label>Mensaje:</label><br />
-                <textarea name="mensaje" required></textarea><br />
-                <button type="submit">Enviar</button>
+                <textarea name="mensaje" aria-required="true" aria-roledescription="Campo para escribir el mensaje del emisor"></textarea><br />
+                <button type="submit" aria-label="Enviar mensaje">Enviar</button>
             </form>
         </section>
     </main>
