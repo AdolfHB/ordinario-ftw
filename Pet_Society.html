@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Society</title>
+    <link rel="stylesheet" href="Estilo.css"/>
+</head>
+<body>
+    <header role="banner">
+        <img src="Imagenes/PetSocietylogo.webp" alt="Logo Pet Society" height="140" width="200"/>
+        <nav role="navigation" aria-label="Menú Principal">
+            <a href="#" onclick="mostrarSeccion('inicio')" role="link" aria-controls="inicio" aria-expanded="true">Inicio</a>
+            <a href="#" onclick="mostrarSeccion('productos')" role="link" aria-controls="productos" aria-expanded="false">Productos</a>
+            <a href="#" onclick="mostrarSeccion('contacto')" role="link" aria-controls="contacto" aria-expanded="false">Contacto</a>
+        </nav>
+    </header>
+
+    <main role="main" aria-label="Contenido de la sección">
+        <section id="inicio" class="seccion" role="region" aria-labelledby="Titulo-Inicio">
+            <h2>Bienvenidos a Pet Society</h2>
+            <img src="Imagenes/Golden_Retriever_9-year_old.jpg" alt="Perro Golden Retriver" height="250" width="200"/>
+            <p id="text">Pet Society es el lugar en donde siempre encontraras la mejor calidad para las mejores mascotas, 
+                nuestra meta principal es ofrecer productos con sello de calidad para todas las mascotas; 
+                garantizando un buen desarrollo y buenos momentos con nuestros pequeños animales.</p>
+        </section>
+
+        <section id="productos" class="seccion oculto" role="region" aria-labelledby="Titulo-Productos">
+            <h2>Productos populares</h2>
+            <div class="productos">
+                <div class="producto" role="group" aria-label="Nombre del producto">
+                    <h3>Whiskas</h3>
+                    <p>$40.00</p>
+                    <button onclick="" aria-label="Comprar Producto">Comprar</button>
+                </div>
+             </div>
+        </section>
+
+        <section id="contacto" class="seccion oculto" role="region" aria-labelledby="Titulo-Contacto">
+            <h2>Horarios de atención</h2>
+            <table aria-label="Horarios de atención">
+                <thead>
+                    <tr>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miercoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                        <th>Sábado</th>
+                        <th>Domingo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>9:00 AM - 6:00 PM</td>
+                        <td>9:00 AM - 6:00 PM</td>
+                        <td>9:00 AM - 6:00 PM</td>
+                        <td>9:00 AM - 6:00 PM</td>
+                        <td>9:00 AM - 6:00 PM</td>
+                        <td>10:00 AM - 4:00 PM</td>
+                        <td>Cerrado</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h2>Contáctanos</h2>
+            <p>Puedes enviarnos un mensaje rellenando el siguiente formulario</p>
+            <form aria-label="Formulario de contacto">
+                <label>Nombre:</label><br />
+                <input type="text" name="nombre" required><br />
+                <label>Correo:</label><br />
+                <input type="email" name="correo" required><br />
+                <label>Mensaje:</label><br />
+                <textarea name="mensaje" required></textarea><br />
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;Este programa es irreal y grosero, las voces celebres son pobres imitaciones y debido a su contenido nadie lo puede ver</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
