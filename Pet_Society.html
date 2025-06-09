@@ -19,18 +19,38 @@
     <main role="main" aria-label="Contenido de la sección">
         <section id="inicio" class="seccion" role="region" aria-labelledby="Titulo-Inicio">
             <h2>Bienvenidos a Pet Society</h2>
-            <img src="Imagenes/Golden_Retriever_9-year_old.jpg" alt="Perro Golden Retriver" height="250" width="200"/>
+            <img style="float: left;" hspace="5" vspace="5"src="Imagenes/Golden_Retriever_9-year_old.jpg" alt="Perro Golden Retriver en el campo mirando a la derecha" height="250" width="200"/>
             <p id="text">Pet Society es el lugar en donde siempre encontraras la mejor calidad para las mejores mascotas, 
                 nuestra meta principal es ofrecer productos con sello de calidad para todas las mascotas; 
                 garantizando un buen desarrollo y buenos momentos con nuestros pequeños animales.</p>
+                <img src="Imagenes/gato.jpg" alt="Gato mirando a la derecha" height="180" width="260"/>
         </section>
 
         <section id="productos" class="seccion oculto" role="region" aria-labelledby="Titulo-Productos">
             <h2>Productos populares</h2>
             <div class="productos">
-                <div class="producto" role="group" aria-label="Nombre del producto">
+                <div class="producto" role="group" aria-label="Whiskas">
                     <h3>Whiskas</h3>
+                    <img src="Imagenes/Whiskas.jpg" alt="Sobre de Whiskas de 85 gramos" height="250" width="200"/>
+                    <p>$37.00</p>
+                    <button onclick="" aria-label="Comprar Producto">Comprar</button>
+                </div>
+                <div class="producto" role="group" aria-label="pedigree">
+                    <h3>Pedigree</h3>
+                    <img src="Imagenes/pedigree.webp" alt="Sobre de Pedigree de 100 gramos" height="250" width="200"/>
+                    <p>$42.00</p>
+                    <button onclick="" aria-label="Comprar Producto">Comprar</button>
+                </div>
+                <div class="producto" role="group" aria-label="catchow">
+                    <h3>Cat Chow</h3>
+                    <img src="Imagenes/Cat chow.webp" alt="Sobre de Cat chow de 85 gramos" height="250" width="200"/>
                     <p>$40.00</p>
+                    <button onclick="" aria-label="Comprar Producto">Comprar</button>
+                </div>
+                <div class="producto" role="group" aria-label="Ganador">
+                    <h3>Ganador</h3>
+                    <img src="Imagenes/ganador.webp" alt="Costal de Ganador de 15 kilos" height="250" width="200"/>
+                    <p>$440.00</p>
                     <button onclick="" aria-label="Comprar Producto">Comprar</button>
                 </div>
              </div>
@@ -67,9 +87,9 @@
             <p>Puedes enviarnos un mensaje rellenando el siguiente formulario</p>
             <form aria-label="Formulario de contacto">
                 <label>Nombre:</label><br />
-                <input type="text" name="nombre" required><br />
+                <input type="text" id="Campo de nombre" name="nombre" required><br />
                 <label>Correo:</label><br />
-                <input type="email" name="correo" required><br />
+                <input type="email" id="Campo de correo" name="correo" required><br />
                 <label>Mensaje:</label><br />
                 <textarea name="mensaje" required></textarea><br />
                 <button type="submit">Enviar</button>
@@ -77,7 +97,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy;Este programa es irreal y grosero, las voces celebres son pobres imitaciones y debido a su contenido nadie lo puede ver</p>
+        <p>&copy;Pet Society 2025</p>
     </footer>
 
     <script src="script.js"></script>

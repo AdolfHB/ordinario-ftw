@@ -85,3 +85,47 @@ table td {
 table thead {
     background-color: #f2f2f2;
 }
+
+form {
+    max-width: 300px;
+    box-shadow: 15px 20px 20px black;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 0px auto;
+}
+
+input[type = "text"],input[type = "email"]{
+    border-radius: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 25px;
+    background-color: #469bbf;
+    border: none;
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 75px;
+    background-color: #de5ebab5;
+    border: none;
+    cursor: pointer;
+}
+
+button {
+    background-color: lightcyan;
+    width: 100%;
+    height: 25px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: lightblue;
+}
